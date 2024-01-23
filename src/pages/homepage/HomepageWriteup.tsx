@@ -1,5 +1,3 @@
-import CalloutCard from "@/components/CalloutCard";
-
 const content = `distribute your tasks to our gig-economy of human annotators, and watch data streaming in days.
 
 monitor human preferences, and resolve inter labeler disagreements
@@ -29,11 +27,7 @@ const HomepageWriteup = () => {
                 80%.
             </div>
             What we offer:
-            <div className="flex text-md justify-center gap-8 flex-wrap">
-                {content.split("\n\n").map((c) => (
-                    <CalloutCard content={c} />
-                ))}
-            </div>
+            <div className="flex text-md justify-center gap-8 flex-wrap"></div>
             <div className="flex">
                 Your reward model is your core IP, keep updating it and
                 expanding its zone of capabilities. Or break it into reward
