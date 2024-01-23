@@ -1,9 +1,30 @@
-import "./App.css";
+import AboutFounders from "./components/sections/AboutFounders";
+import Features from "./components/sections/Features";
+import Footer from "./components/sections/Footer";
+import Header from "./components/sections/Header";
+import Hero from "./components/sections/Hero";
+import SocialProof from "./components/sections/SocialProof";
+import { Separator } from "./components/ui/separator";
 
 function App() {
     return (
         <>
-            <h1>Hello World</h1>
+            <div className="container relative ">
+                <Header />
+                <Separator />
+                <Hero />
+                <Separator />
+                <Features />
+                <Separator />
+                <SocialProof />
+                <Separator />
+                <div className="flex text-4xl text-center m-8 justify-start font-semibold">
+                    The Team
+                </div>
+                <AboutFounders />
+                <Separator />
+                <Footer />
+            </div>
         </>
     );
 }
