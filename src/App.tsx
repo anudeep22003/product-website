@@ -1,32 +1,45 @@
 import AboutFounders from "./components/sections/AboutFounders";
-import Features from "./components/sections/Features";
-import Footer from "./components/sections/Footer";
-import Header from "./components/sections/Header";
-import Hero from "./components/sections/Hero";
-import SocialProof from "./components/sections/SocialProof";
-import { Separator } from "./components/ui/separator";
+import FAQs from "./components/sections/FAQs";
+import Footer2 from "./components/sections/Footer2";
+import Header2 from "./components/sections/Header2";
+import Hero2 from "./components/sections/Hero2";
+import SocialProof2 from "./components/sections/SocialProof2";
+import Testimonials from "./components/sections/Testimonials";
+import WhyUse2 from "./components/sections/WhyUse2";
+// import HomePagev1 from "./pages/HomePagev1";
+
+const HomePageApp = () => {
+    return (
+        <div className="flex items-center justify-center">
+            {/* <HomePagev1 /> */}
+            <div className="flex flex-col ml-12 mr-12 p-4 gap-8 w-3/4 items-center">
+                <Header2 />
+                <Hero2 />
+                <SocialProof2 />
+                <WhyUse2 />
+                <FAQs />
+                <Testimonials />
+                <Footer2 />
+            </div>
+        </div>
+    );
+};
+
+const AboutPageApp = () => {
+    return (
+        <div className="flex items-center justify-center">
+            <div className="flex flex-col ml-12 mr-12 p-4 gap-8 w-3/4 items-center">
+                <Header2 />
+                <AboutFounders />
+                <Footer2 />
+            </div>
+        </div>
+    );
+};
 
 function App() {
-    return (
-        <>
-            <div className="container relative ">
-                <Header />
-                <Separator />
-                <Hero />
-                <Separator />
-                <Features />
-                <Separator />
-                <SocialProof />
-                <Separator />
-                <div className="flex text-4xl text-center m-8 justify-start font-semibold">
-                    The Team
-                </div>
-                <AboutFounders />
-                <Separator />
-                <Footer />
-            </div>
-        </>
-    );
+    return <AboutPageApp />;
 }
 
 export default App;
+export { HomePageApp, AboutPageApp };
