@@ -3,7 +3,7 @@ import Ellipse from "../Ellipse";
 
 const Hero2 = () => {
     return (
-        <section className="flex">
+        <section className="flex mr-12 ml-12 ">
             <div
                 id="hero-text-section"
                 className="flex flex-col gap-8 mt-32 items-start"
