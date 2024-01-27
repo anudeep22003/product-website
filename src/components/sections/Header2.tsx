@@ -6,7 +6,7 @@ const Header2 = () => {
     return (
         <section className="flex w-full mt-12 gap-4 items-center justify-center">
             <div className="text-center text-black text-4xl font-bold font-['Inter'] ">
-                LOGO
+                - REWARD -
             </div>
             <div
                 id="header-button-row"
@@ -22,7 +22,7 @@ const Header2 = () => {
                     className="text-black text-2xl font-medium font-['Inter']"
                     onClick={() => navigate("/about")}
                 >
-                    About
+                    Team
                 </div>
             </div>
             <div className="flex ml-12" id="spacer"></div>
