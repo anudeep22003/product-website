@@ -10,17 +10,14 @@ import WhyUse2 from "./components/sections/WhyUse2";
 
 const HomePageApp = () => {
     return (
-        <div className="flex items-center justify-center">
-            {/* <HomePagev1 /> */}
-            <div className="flex flex-col ml-12 mr-12 p-4 gap-8 w-3/4 items-center">
-                <Header2 />
-                <Hero2 />
-                <SocialProof2 />
-                <WhyUse2 />
-                <FAQs />
-                <Testimonials />
-                <Footer2 />
-            </div>
+        <div className="flex flex-col ml-12 mr-12 p-4 gap-8 w-full items-center flex-nowrap">
+            <Header2 />
+            <Hero2 />
+            <SocialProof2 />
+            <WhyUse2 />
+            <FAQs />
+            <Testimonials />
+            <Footer2 />
         </div>
     );
 };
