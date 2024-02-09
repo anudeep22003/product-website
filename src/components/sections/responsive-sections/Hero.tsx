@@ -19,7 +19,11 @@ const Hero = () => {
                     consolidate the experience of your workforce and use it to
                     create a perpetually learning AI
                 </p>
-                <Button>Join Now</Button>
+                <Button>
+                    <a href="https://cal.com/anudeepy/learn-more-about-rlhf-and-reward-ai">
+                        Chat with us
+                    </a>
+                </Button>
             </div>
         </section>
     );

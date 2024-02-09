@@ -14,7 +14,11 @@ const Header = () => {
                     <Link to="/team">Team</Link>
                 </div>
                 <div className="flex">
-                    <Button size={"sm"}>Join Now</Button>
+                    <Button size={"sm"}>
+                        <a href="https://cal.com/anudeepy/learn-more-about-rlhf-and-reward-ai">
+                            Chat with us
+                        </a>
+                    </Button>
                 </div>
             </div>
         </section>

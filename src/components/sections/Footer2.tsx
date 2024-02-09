@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer2 = () => {
     return (
         <section
@@ -9,12 +11,8 @@ const Footer2 = () => {
                 <p className="text-sm">Copyright 2024, All rights reserved</p>
             </div>
             <div className="flex px-8 justify-end items-start gap-8 self-stretch">
-                <a className="" href="/">
-                    Home
-                </a>
-                <a className="" href="/team">
-                    Team
-                </a>
+                <Link to="/">Home</Link>
+                <Link to="/team">Team</Link>
             </div>
         </section>
     );
