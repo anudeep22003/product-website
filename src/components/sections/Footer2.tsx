@@ -1,20 +1,20 @@
-import { useNavigate } from "react-router-dom";
-
 const Footer2 = () => {
-    const navigate = useNavigate();
     return (
-        <section id="footer" className="flex bg-slate-100 p-8 w-full">
-            <div className="flex flex-col items-start justify-end w-1/3">
+        <section
+            id="footer"
+            className="flex flex-col w-full px-8 pt-8 pb-4 gap-8 items-start content-between bg-slate-50 rounded-md"
+        >
+            <div className="flex flex-col items-start gap-4 self-stretch">
                 <p className="text-md">Made with 🖤 by @anudeep</p>
                 <p className="text-sm">Copyright 2024, All rights reserved</p>
             </div>
-            <div className="flex w-2/3 justify-end items-end ">
-                <p className="m-8" onClick={() => navigate("/")}>
+            <div className="flex px-8 justify-end items-start gap-8 self-stretch">
+                <a className="" href="/">
                     Home
-                </p>
-                <p className="m-8" onClick={() => navigate("about")}>
+                </a>
+                <a className="" href="/team">
                     Team
-                </p>
+                </a>
             </div>
         </section>
     );

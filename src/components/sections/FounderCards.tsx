@@ -15,7 +15,7 @@ const FounderCardAnudeep = ({ addionalClasses }: FounderCardProps) => {
         <div
             className={`grid grid-cols-subgrid col-span-10 ${addionalClasses}`}
         >
-            <div className="grid row-span-1 gap-1 col-span-3 bg-slate-50 items-start rounded-md">
+            <div className="grid row-span-1 -1 col-span-3 bg-slate-50 items-start rounded-md">
                 <div className="flex justify-end h-full col-span-3 m-4">
                     <CirclewithImage imgSource="/anudeep.jpeg" />
                 </div>

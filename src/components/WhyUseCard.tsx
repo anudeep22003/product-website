@@ -4,7 +4,7 @@ type UseCardProps = {
     bodyText: string;
 };
 
-const UseCard = ({ bodyText, headerText, imgSource }: UseCardProps) => {
+const UseCardOld = ({ bodyText, headerText, imgSource }: UseCardProps) => {
     return (
         <div className="grid grid-cols-6 grid-rows-6 gap-1 rounded-md bg-slate-100 p-4 w-1/3 min-w-[350px] max-w-[400px] items-center">
             <img
@@ -21,6 +21,19 @@ const UseCard = ({ bodyText, headerText, imgSource }: UseCardProps) => {
         </div>
     );
 };
+const UseCard = ({ bodyText, headerText, imgSource }: UseCardProps) => {
+    return (
+        <div className="flex flex-col w-[300px] p-4 items-center gap-6 bg-slate-200 rounded-md self-stretch justify-between">
+            <img src={imgSource} alt={imgSource} className="w-1/4" />
+            <h1 className="w-2/3 text-lg font-semibold text-center underline">
+                {headerText}
+            </h1>
+            <div className="flex p-2 items-center self-stretch bg-slate-100 whitespace-pre-wrap">
+                <p className="text-center">{bodyText}</p>
+            </div>
+        </div>
+    );
+};
 
 const WhyUseCard = ({ variant }: { variant: 1 | 2 | 3 }) => {
     switch (variant) {
@@ -30,7 +43,7 @@ const WhyUseCard = ({ variant }: { variant: 1 | 2 | 3 }) => {
                 headerText: "Train Your Reward Model",
                 bodyText: `Build your Intellectual Property, your reward model is yours.
 
-                    We’ll manage training, updating and versioning your reward models. `,
+We’ll manage training, updating and versioning your reward models. `,
             };
             return <UseCard {...props} />;
         }
@@ -40,7 +53,7 @@ const WhyUseCard = ({ variant }: { variant: 1 | 2 | 3 }) => {
                 headerText: "Automate human feedback pipeline",
                 bodyText: `We will distribute the feedback tasks to our human-network, so we handle the 80%.
 
-                Your 20% is used to guide the output of our 80%.`,
+Your 20% is used to guide the output of our 80%.`,
             };
             return <UseCard {...props} />;
         }
@@ -50,9 +63,7 @@ const WhyUseCard = ({ variant }: { variant: 1 | 2 | 3 }) => {
                 headerText: "Offload training, and running of AI",
                 bodyText: `RLHF training is quite sensitive and finnicky.
 
-                    We’ll take care of training, maintaining and running it. You can focus on distributing it to your customers.
-
-                    `,
+We’ll take care of training, maintaining and running it. You can focus on distributing it to your customers.  `,
             };
             return <UseCard {...props} />;
         }
