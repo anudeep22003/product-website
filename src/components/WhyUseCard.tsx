@@ -4,23 +4,6 @@ type UseCardProps = {
     bodyText: string;
 };
 
-const UseCardOld = ({ bodyText, headerText, imgSource }: UseCardProps) => {
-    return (
-        <div className="grid grid-cols-6 grid-rows-6 gap-1 rounded-md bg-slate-100 p-4 w-1/3 min-w-[350px] max-w-[400px] items-center">
-            <img
-                src={imgSource}
-                alt={imgSource}
-                className="row-start-1 row-span-2 col-span-2 col-start-3"
-            />
-            <div className="flex flex-shrink row-start-3 col-start-2 col-span-4 text-center text-black text-2xl font-bold font-['Inter'] underline tracking-wider">
-                {headerText}
-            </div>
-            <div className="row-start-4 row-span-3 col-start-1 col-span-6 text-black text-xl font-light tracking-wide font-['Inter'] whitespace-pre-line bg-slate-50 p-4 m-4 rounded-md self-start drop-shadow-md">
-                {bodyText}
-            </div>
-        </div>
-    );
-};
 const UseCard = ({ bodyText, headerText, imgSource }: UseCardProps) => {
     return (
         <div className="flex flex-col w-[300px] p-4 items-center gap-6 bg-slate-200 rounded-md self-stretch justify-between">
